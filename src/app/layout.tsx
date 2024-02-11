@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
+import Navbar from "./navbar";
 import { Inter } from "next/font/google";
+import { Quicksand } from "next/font/google";
+import Footer from "./footer";
 import "./globals.css";
+import { quicksand } from "./ui/fonts";
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +22,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossOrigin="anonymous"
+      referrerPolicy="no-referrer"
+      />
+      </head>
+      
+      <body className={`${quicksand.className} `}>
+        <section>
+        <Navbar/>
+        <div className="bg-whiteBg">
+        {children}
+        </div>
+        <Footer/>
+        </section>
+        </body>
+    
     </html>
   );
 }
