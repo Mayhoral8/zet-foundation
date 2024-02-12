@@ -11,7 +11,7 @@ const Donate = () => {
       }, []);
   return (
     <main>
-      <section className='lg:grid lg:grid-cols-2 lg:justify-between'>
+      <section className='lg:grid lg:grid-cols-2 lg:justify-between lg:pt-20 w-full'>
 
         <article className='bg-darkGreen pt-24'>
         <div className='text-6xl text-white flex items-center justify-center mx-autotext-start'>
@@ -29,11 +29,11 @@ const Donate = () => {
               data-aos-easing="ease-out"
               data-aos-duration="1200"
               data-aos-once = 'true' 
-              className='absolute bg-white ml-28 lg:ml-64 shadow-xl mt-10 h-12 lg:h-8 lg:w-28 items-center rounded-lg w-36 justify-center   lg:text-sm flex flex-row'>Send Fund  <IoIosSend/></button>
-                <button   data-aos="fade-left"
+              className=' animate-bounce absolute bg-white ml-28 lg:ml-64 shadow-xl mt-10 h-12 lg:h-8 lg:w-28 items-center rounded-lg w-36 justify-center   lg:text-sm flex flex-row'>Send Fund  <IoIosSend/></button>
+                <button   data-aos="fade-up"
               data-aos-easing="ease-out"
               data-aos-once = 'true'
-              data-aos-duration="1200" className='absolute bg-white ml-48 shadow-xl mt-56 h-12 lg:h-8 lg:w-28 lg:text-sm lg:ml-72 items-center   rounded-lg w-36 justify-center flex flex-row'>Scholarship  <IoIosSend/></button>
+              data-aos-duration="1200" className=' animate-bounce absolute bg-white ml-48 shadow-xl mt-56 h-12 lg:h-8 lg:w-28 lg:text-sm lg:ml-72 items-center   rounded-lg w-36 justify-center flex flex-row'>Scholarship  <IoIosSend/></button>
 
 <div className='lg:h-72'>
 

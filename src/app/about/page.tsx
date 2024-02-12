@@ -6,9 +6,9 @@ import aboutB from '../../../public/about/aboutb.png'
 
 const About = () => {
   return (
-    <main className='pt-16'>
-      <h2 className='font-light text-lightGreen text-2xl left-0 ml-32 lg:ml-0 lg:text-center text-center'>About Us</h2>
-      <section className='lg:grid lg:grid-cols-2 lg:px-24 lg:w-full  '>
+    <main className='lg:pt-20 pt-12'>
+      <h2 className='font-light text-lightGreen text-2xl text-center'>About Us</h2>
+      <section className='lg:grid lg:grid-cols-2 lg:px-24 lg:w-full lg:pt-6  '>
 
       <section className='lg:flex lg:flex-col lg:space-y-2  '>
         <div className=' lg:w-[470px]'>
