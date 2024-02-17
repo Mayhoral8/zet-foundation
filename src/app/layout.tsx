@@ -5,7 +5,7 @@ import { Quicksand } from "next/font/google";
 import Footer from "./footer";
 import "./globals.css";
 import { quicksand } from "./ui/fonts";
-
+import { ContextComp } from "./context/context";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -33,6 +33,7 @@ export default function RootLayout({
       </head>
       
       <body className={`${quicksand.className} `}>
+        <ContextComp>
         <section>
         <Navbar/>
         <div className="bg-whiteBg">
@@ -40,6 +41,7 @@ export default function RootLayout({
         </div>
         <Footer/>
         </section>
+        </ContextComp>
         </body>
     
     </html>
