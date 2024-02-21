@@ -335,7 +335,7 @@ export default function Home() {
                 data-aos-easing="ease-out"
                 data-aos-duration="1200"
                 data-aos-once="true"
-                className="lg:w-2/5 border"
+                className="lg:w-2/5"
               >
                 <Image
                   src={project1}
