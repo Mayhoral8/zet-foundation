@@ -17,8 +17,6 @@ const Navbar = () => {
     const scrollTo = ()=>{
         const projectCoord = ref2.current?.getBoundingClientRect()
         const navbarHeight = ref1.current?.getBoundingClientRect().height === 297.5 ? 60 : ref1.current?.getBoundingClientRect().height
-
-        console.log(navbarHeight);
         
         window.scrollTo({
             left: projectCoord?.left && projectCoord.left + window.scrollX,
@@ -69,11 +67,9 @@ const Navbar = () => {
                 About Us
                 </Link>
                 </li>
-                    <div onClick={scrollTo} className={`${pathname !== '/' && 'hidden'} cursor-pointer ${openNavBar && pathname == '/'  ? 'visible': 'hidden lg:block'} `}>
+                    <div onClick={scrollTo} className={`${pathname !== '/' ? 'hidden':'lg:block'} cursor-pointer ${openNavBar && pathname == '/'  ? 'visible': 'hidden'} `}>
                 <li  onClick={()=> navBarHandler('')}>
-                
                 Projects
-                
                 </li>
                     </div>
                 <li  className={`${openNavBar ? 'visible': 'hidden'} lg:block` } onClick={()=> navBarHandler('')}>

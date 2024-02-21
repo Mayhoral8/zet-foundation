@@ -7,7 +7,6 @@ import "./globals.css";
 import { quicksand } from "./ui/fonts";
 import { ContextComp } from "./context/context";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,27 +22,24 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossOrigin="anonymous"
-      referrerPolicy="no-referrer"
-      />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
       </head>
-      
+
       <body className={`${quicksand.className} `}>
         <ContextComp>
-        <section>
-        <Navbar/>
-        <div className="bg-whiteBg">
-        {children}
-        </div>
-        <Footer/>
-        </section>
+          <section>
+            <Navbar />
+            <div className="bg-whiteBg">{children}</div>
+            <Footer />
+          </section>
         </ContextComp>
-        </body>
-    
+      </body>
     </html>
   );
 }

@@ -4,19 +4,19 @@ import { ContextCreate } from "./context/context";
 import Image from "next/image";
 import { quicksand } from "./ui/fonts";
 
-import hero1 from "../../public/landing-page-images/section-a/hero-a-mobile.png";
-import heroWeb from "../../public/landing-page-images/section-a/hero-a-web.png";
+import hero1 from "../../public/landing-page-images/section-a/hero-a-mobile.webp";
+import heroWeb from "../../public/landing-page-images/section-a/hero-a-web.webp";
 
-import hero2 from "../../public/landing-page-images/section-a/hero2.png";
-import hero3 from "../../public/landing-page-images/section-a/hero3.png";
-import jthomas from "../../public/landing-page-images/section-a/jarumi-thomas.png";
-import chgLiv from "../../public/landing-page-images/section-b/changingLives-mobile.png";
-import chgLiv2 from "../../public/landing-page-images/section-b/chLives-web.png";
+import hero2 from "../../public/landing-page-images/section-a/hero2.webp";
+import hero3 from "../../public/landing-page-images/section-a/hero3.webp";
+import jthomas from "../../public/landing-page-images/section-a/jarumi-thomas.webp";
+import chgLiv from "../../public/landing-page-images/section-b/changingLives-mobile.webp";
+import chgLiv2 from "../../public/landing-page-images/section-b/chLives-web.webp";
 
-import project1 from "../../public/landing-page-images/projects/project-1.png";
-import project2 from "../../public/landing-page-images/projects/project-2.png";
-import project3 from "../../public/landing-page-images/projects/project-3.png";
-import project4 from "../../public/landing-page-images/projects/project-4.png";
+import project1 from "../../public/landing-page-images/projects/project-1.webp";
+import project2 from "../../public/landing-page-images/projects/project-2.webp";
+import project3 from "../../public/landing-page-images/projects/project-3.webp";
+import project4 from "../../public/landing-page-images/projects/project-4.webp";
 
 import { MdArrowOutward } from "react-icons/md";
 import { IoIosSend } from "react-icons/io";
@@ -56,7 +56,7 @@ export default function Home() {
                   src={hero1}
                   width={519}
                   height={495}
-                  className="w-full lg:w-[400px] border lg:h-[320px] lg:ml-auto lg:hidden  rounded-xl shadow-lg"
+                  className="w-full lg:w-[400px] border lg:h-[320px] lg:ml-auto lg:hidden md:w-11/12 md:mx-auto  rounded-xl shadow-lg"
                   alt="Screenshots of the dashboard project showing mobile version"
                 />
               </div>
@@ -126,7 +126,7 @@ export default function Home() {
           </div>
           <section className=" w-full flex flex-col justify-between space-y-8 mt-10 ">
             <div className="font-medium quote text-center lg:text-start">
-              <p className=" font-bold lg:w-full lg:text-4xl ">
+              <p className=" font-bold lg:w-full md:text-2xl lg:text-4xl ">
                 The beauty of life does not
                 <br className="hidden lg:block" /> depend on how happy you{" "}
                 <br className="hidden lg:block" /> are,
@@ -141,8 +141,8 @@ export default function Home() {
             <div className="font-medium quote2 mt-4 lg:mt-2 flex space-y-4 lg:space-y-4 flex-col  text-center lg:text-start lg:items-start items-center">
               <p>
                 A quote from T.B Joshua which explains the deep concerns{" "}
-                <br className="lg:block hidden" /> every privileged individual
-                needs to express to the less privileged{" "}
+                <br className="lg:block hidden" /> every privileged  <br className="md:block hidden" /> individual
+                needs to express to the less privileged <br className="md:block hidden" />
                 <br className="lg:block hidden" /> within our communities in
                 order to attain true happiness
               </p>
@@ -156,7 +156,7 @@ export default function Home() {
             <div className="font-medium quote2 mt-4 flex space-y-2 lg:space-y-4 flex-col justify-center text-center lg:items-start lg:text-start items-center">
               <p>
                 Welcome to Zion Eminent Foundation, a place that{" "}
-                <br className="lg:block hidden" /> gives hope to the hopeless
+                <br className="lg:block md:block hidden" /> gives hope to the hopeless
                 and seeks to find <br className="lg:block hidden" /> happiness
                 in making others happy ...
               </p>
@@ -187,8 +187,8 @@ export default function Home() {
             </article>
           </section>
         </article>
-        <section className="lg:grid  lg:grid-cols-2 lg:justify-center  lg:items-center ">
-          <article className="mt-12">
+        <section className="lg:grid lg:grid-cols-2 lg:justify-center lg:items-center ">
+          <article className="mt-12 md:justify-center md:flex  border md:mx-auto">
             <Image
               src={chgLiv}
               className="lg:w-[665px] lg:h-[800px] lg:hidden"
@@ -227,7 +227,7 @@ export default function Home() {
                 Our Mission <IoRocketOutline />
               </span>
               <div className="w-[320px] h-28 lg:w-[500px] lg:h-40  border font-light px-4 leading-relaxed rounded-2xl text-start  flex items-center mx-auto bg-darkGreen text-white">
-                <p className="text-sm lg:text-base">
+                <p className="text-sm  leading-tight lg:text-base">
                   To provide humanitarian support to the less privileged in
                   communities and refugee camps in the areas of education,
                   health and social amenities in Nigeria and the African
@@ -259,7 +259,7 @@ export default function Home() {
               data-aos-easing="ease-out"
               data-aos-duration="1200"
               data-aos-once="true"
-              className="lg:flex  flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-12"
+              className="lg:flex md:flex md:flex-row md:space-y-0 md:space-x-10  flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-12"
             >
               <div className="w-[320px] h-28 py-2 border lg:h-40 font-light px-3 text-start rounded-2xl flex flex-col justify-around mx-auto bg-lightGreen ">
                 <h2>
@@ -295,7 +295,7 @@ export default function Home() {
               data-aos-easing="ease-out"
               data-aos-duration="1200"
               data-aos-once="true"
-              className="lg:flex flex-col space-y-4 lg:space-y-0  lg:flex-row lg:space-x-12"
+              className="lg:flex md:flex md:flex-row md:space-y-0 md:space-x-10 flex-col space-y-4 lg:space-y-0  lg:flex-row lg:space-x-12"
             >
               <div className="w-[320px] h-28 py-2 border lg:h-40 font-light px-3 text-start rounded-2xl flex flex-col justify-around mx-auto bg-white ">
                 <h2>
@@ -329,22 +329,22 @@ export default function Home() {
         <section ref={ref2} className="mt-8">
           <h3 className="text-center">SOME OF OUR PROJECTS</h3>
           <article className="flex flex-col lg:justify-center lg:flex-col lg:w-full lg:items-center space-y-8 py-3">
-            <div className="lg:flex flex-col lg:space-y-0 space-y-5 lg:flex-row lg:space-x-8 lg:justify-center">
+            <div className="border  lg:flex flex-col lg:space-y-0 space-y-5 lg:flex-row lg:space-x-8 lg:justify-center">
               <div
                 data-aos="fade-up"
                 data-aos-easing="ease-out"
                 data-aos-duration="1200"
                 data-aos-once="true"
-                className="lg:w-2/5"
+                className="lg:w-2/5 border"
               >
                 <Image
                   src={project1}
                   width={519}
                   height={495}
-                  className="lg:mx-auto "
+                  className="lg:mx-auto md:mx-auto"
                   alt="Screenshots of the dashboard project showing mobile version"
                 />
-                <p className="text-xs font-normal lg:mt-4 text-center">
+                <p className="text-xs font-normal lg:mt-4 text-center md:px-20">
                   Intervention to Students Without Study Materials in Bafin Kogi
                   Kafinta, Janda Sarki, Ung Magaji & Janda Madaki, Kaduna State,
                   Nigeria, 2020.
@@ -362,10 +362,10 @@ export default function Home() {
                   src={project2}
                   width={519}
                   height={495}
-                  className="lg:mx-auto"
+                  className="lg:mx-auto md:mx-auto"
                   alt="Screenshots of the dashboard project showing mobile version"
                 />
-                <p className="text-xs font-normal lg:mt-4 text-center">
+                <p className="text-xs font-normal lg:mt-4 text-center md:px-4">
                   Outreach to Children Reception Centre (Home Of The Needy)
                   Gaa-Akanbi, Ilorin, Kwara State, Nigeria
                 </p>
@@ -384,7 +384,7 @@ export default function Home() {
                   src={project3}
                   width={519}
                   height={495}
-                  className="lg:mx-auto "
+                  className="lg:mx-auto md:mx-auto"
                   alt="Screenshots of the dashboard project showing mobile version"
                 />
                 <p className="text-xs lg:px-10 font-normal lg:mt-4 text-center">
@@ -403,10 +403,10 @@ export default function Home() {
                   src={project4}
                   width={519}
                   height={495}
-                  className="lg:mx-auto "
+                  className="lg:mx-auto md:mx-auto"
                   alt="Screenshots of the dashboard project showing mobile version"
                 />
-                <p className="text-xs font-normal lg:px-20 lg:mt-4 break-words text-center">
+                <p className="text-xs font-normal lg:px-20 lg:mt-4 break-words text-center md:px-20">
                   Outreach to Janda Bakin Kogi and Ruga Alhaji Tanko Community
                   where mosquito nets, diapers for young girls were distributed,
                   health talks were given and widows were reached with fabrics
