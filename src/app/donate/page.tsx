@@ -28,7 +28,7 @@ const Donate = () => {
               data-aos-easing="ease-out"
               data-aos-duration="1200"
               data-aos-once="true"
-              className=" animate-bounce absolute bg-white ml-28 lg:ml-64 shadow-xl mt-10 h-12 lg:h-8 lg:w-28 items-center rounded-lg w-36 justify-center   lg:text-sm flex flex-row"
+              className=" animate-bounce absolute z-30 bg-white ml-28 min-[667px]:ml-64 lg:ml-64 min-[667px]:mt-36 shadow-xl mt-10 h-12 lg:h-8 lg:w-28 items-center rounded-lg w-36 justify-center   lg:text-sm flex flex-row"
             >
               Send Fund <IoIosSend />
             </button>
@@ -37,12 +37,15 @@ const Donate = () => {
               data-aos-easing="ease-out"
               data-aos-once="true"
               data-aos-duration="1200"
-              className=" animate-bounce absolute bg-white ml-48 shadow-xl mt-56 h-12 lg:h-8 lg:w-28 lg:text-sm lg:ml-72 items-center   rounded-lg w-36 justify-center flex flex-row"
+              className=" animate-bounce absolute z-30 bg-white ml-48 shadow-xl min-[667px]:mt-96 min-[667px]:ml-96 mt-56 h-12 lg:h-8 lg:w-28 lg:text-sm lg:ml-72 items-center   rounded-lg w-36 justify-center flex flex-row"
             >
               Scholarship <IoIosSend />
             </button>
 
-            <div className="lg:h-72">
+            <div className=" lg:h-72" data-aos="fade-up"
+              data-aos-easing="ease-out"
+              data-aos-once="true"
+              data-aos-duration="1200">
               <Image
                 src={donate}
                 width={519}
@@ -56,18 +59,18 @@ const Donate = () => {
         <article className="lg:flex lg:flex-col lg:justify-center lg:items-center">
           <div className="flex flex-col space-y-2 px-2 text-sm">
             <h1 className="text-center font-bold text-xl text-lightGreen">Donate</h1>
-            <p className="mt-6 indent-8 lg:px-36 lg:indent-0">
+            <p className="mt-6 min-[667px]:indent-0 min-[667px]:text-center min-[667px]:px-10 indent-8 lg:px-36 lg:indent-0">
               At Zet Foundation, funds are implemented on actual projects
               reaching the targeted group of individuals. Your little help will
               go a long way to help change the sad stories heard from various
               children and widows in many poor communities in Nigeria.
             </p>
-            <p className="mt-2 indent-2 lg:px-36 lg:indent-0">
+            <p className="mt-2 indent-2 lg:px-36 lg:indent-0 min-[667px]:indent-0 min-[667px]:text-center">
               Willing to help? You can send funds to the following Account
               details:
             </p>
           </div>
-          <article className="px-2 lg:w-full lg:justify-center flex flex-row text-sm items-center space-x-2 mt-4">
+          <article className="px-2  min-[667px]:justify-center lg:w-full lg:justify-center flex flex-row text-sm items-center space-x-2 mt-4">
             <div className="flex flex-col  ">
               <h1 className="font-light">Account Name:</h1>
               <h1 className="font-light">Bank:</h1>
@@ -79,9 +82,9 @@ const Donate = () => {
               <h1>0095714063</h1>
             </div>
           </article>
-          <div className="px-2 lg:items-center lg:justify-center lg:px-0">
-            <h1 className="font-bold mt-4 text-darkGreen">Dollar Accounts</h1>
-            <article className="w-full flex flex-row text-sm lg:items-start items-center space-x-2">
+          <div className="px-2  lg:items-center lg:justify-center lg:px-0">
+            <h1 className="font-bold mt-4 text-darkGreen min-[667px]:text-center">Dollar Accounts</h1>
+            <article className="w-full flex flex-row text-sm  min-[667px]:justify-center lg:items-start items-center space-x-2">
               <div className="flex flex-col  ">
                 <h1 className="font-light">Cash:</h1>
                 <h1 className="font-light">Transfer:</h1>

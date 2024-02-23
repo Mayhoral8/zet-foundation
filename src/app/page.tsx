@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect, useContext, useRef } from "react";
 import { ContextCreate } from "./context/context";
+import { usePathname } from 'next/navigation'
+
 import Image from "next/image";
 import { quicksand } from "./ui/fonts";
 
@@ -188,7 +190,7 @@ export default function Home() {
           </section>
         </article>
         <section className="lg:grid lg:grid-cols-2 lg:justify-center lg:items-center ">
-          <article className="mt-12 md:justify-center md:flex  border md:mx-auto">
+          <article className="mt-12 md:justify-center md:flex  border md:mx-auto min-[667px]:mx-auto min-[667px]:justify-center min-[667px]:flex">
             <Image
               src={chgLiv}
               className="lg:w-[665px] lg:h-[800px] lg:hidden"
@@ -259,9 +261,9 @@ export default function Home() {
               data-aos-easing="ease-out"
               data-aos-duration="1200"
               data-aos-once="true"
-              className="lg:flex md:flex md:flex-row md:space-y-0 md:space-x-10  flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-12"
+              className="lg:flex min-[667px]:flex min-[667px]:flex-row min-[667px]:space-y-0 min-[667px]:space-x-4  md:flex md:flex-row md:space-y-0 md:space-x-10  flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-12"
             >
-              <div className="w-[320px] h-28 py-2 border lg:h-40 font-light px-3 text-start rounded-2xl flex flex-col justify-around mx-auto bg-lightGreen ">
+              <div className="w-[320px] min-[667px]:w-[280px] h-28 py-2 border lg:h-40 font-light px-3 text-start rounded-2xl flex flex-col justify-around mx-auto bg-lightGreen ">
                 <h2>
                   <RiGraduationCapLine />
                 </h2>
@@ -276,7 +278,7 @@ export default function Home() {
                 data-aos-easing="ease-out"
                 data-aos-duration="1200"
                 data-aos-once="true"
-                className="w-[320px] h-28 py-2 border lg:h-40 font-light px-3 text-start rounded-2xl flex flex-col justify-around mx-auto bg-lightGreen "
+                className="w-[320px]  h-28 py-2 border lg:h-40 font-light px-3 text-start rounded-2xl flex flex-col justify-around mx-auto bg-lightGreen "
               >
                 <h2>
                   <PiHandHeartLight />
@@ -295,9 +297,9 @@ export default function Home() {
               data-aos-easing="ease-out"
               data-aos-duration="1200"
               data-aos-once="true"
-              className="lg:flex md:flex md:flex-row md:space-y-0 md:space-x-10 flex-col space-y-4 lg:space-y-0  lg:flex-row lg:space-x-12"
+              className="lg:flex min-[667px]:flex min-[667px]:flex-row min-[667px]:space-y-0 min-[667px]:space-x-4 md:flex md:flex-row md:space-y-0 md:space-x-10 flex-col space-y-4 lg:space-y-0  lg:flex-row lg:space-x-12"
             >
-              <div className="w-[320px] h-28 py-2 border lg:h-40 font-light px-3 text-start rounded-2xl flex flex-col justify-around mx-auto bg-white ">
+              <div className="w-[320px] min-[667px]:w-[280px] h-28 py-2 border lg:h-40 font-light px-3 text-start rounded-2xl flex flex-col justify-around mx-auto bg-white ">
                 <h2>
                   <GiSkills />
                 </h2>
@@ -329,7 +331,7 @@ export default function Home() {
         <section ref={ref2} className="mt-8">
           <h3 className="text-center">SOME OF OUR PROJECTS</h3>
           <article className="flex flex-col lg:justify-center lg:flex-col lg:w-full lg:items-center space-y-8 py-3">
-            <div className="border  lg:flex flex-col lg:space-y-0 space-y-5 lg:flex-row lg:space-x-8 lg:justify-center">
+            <div className=" lg:flex flex-col lg:space-y-0 space-y-5 lg:flex-row lg:space-x-8 lg:justify-center">
               <div
                 data-aos="fade-up"
                 data-aos-easing="ease-out"
@@ -341,7 +343,7 @@ export default function Home() {
                   src={project1}
                   width={519}
                   height={495}
-                  className="lg:mx-auto md:mx-auto"
+                  className="lg:mx-auto md:mx-auto min-[667px]:mx-auto"
                   alt="Screenshots of the dashboard project showing mobile version"
                 />
                 <p className="text-xs font-normal lg:mt-4 text-center md:px-20">
@@ -362,7 +364,7 @@ export default function Home() {
                   src={project2}
                   width={519}
                   height={495}
-                  className="lg:mx-auto md:mx-auto"
+                  className="lg:mx-auto md:mx-auto min-[667px]:mx-auto"
                   alt="Screenshots of the dashboard project showing mobile version"
                 />
                 <p className="text-xs font-normal lg:mt-4 text-center md:px-4">
@@ -384,7 +386,7 @@ export default function Home() {
                   src={project3}
                   width={519}
                   height={495}
-                  className="lg:mx-auto md:mx-auto"
+                  className="lg:mx-auto md:mx-auto min-[667px]:mx-auto"
                   alt="Screenshots of the dashboard project showing mobile version"
                 />
                 <p className="text-xs lg:px-10 font-normal lg:mt-4 text-center">
@@ -403,7 +405,7 @@ export default function Home() {
                   src={project4}
                   width={519}
                   height={495}
-                  className="lg:mx-auto md:mx-auto"
+                  className="lg:mx-auto md:mx-auto min-[667px]:mx-auto"
                   alt="Screenshots of the dashboard project showing mobile version"
                 />
                 <p className="text-xs font-normal lg:px-20 lg:mt-4 break-words text-center md:px-20">

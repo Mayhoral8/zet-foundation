@@ -41,10 +41,20 @@ const Footer = () => {
         <div className="">
           <h3 className="text-center">Follow us</h3>
           <div className="text-white justify-center lg:justify-start space-x-4 flex flex-row">
-            <FaFacebook />
+
+            <a href="https://www.facebook.com/Zetfoundation.org" target="blank">
+              <FaFacebook />
+              </a>
+            <a href="https://www.instagram.com/zet_foundation/?igshid=NTc4MTIwNjQ2YQ" target="blank">
             <FaInstagram />
+            </a>
+
+            <a href="#" target="blank">
             <FaYoutube />
+            </a>
+            <a href="https://twitter.com/ZETFoundation24" target="blank">
             <FaXTwitter />
+            </a>
           </div>
         </div>
 
