@@ -37,7 +37,7 @@ const Donate = () => {
               data-aos-easing="ease-out"
               data-aos-duration="1200"
               data-aos-once="true"
-              className=" animate-bounce absolute hidden lg:block z-10 bg-white ml-28 min-[667px]:ml-64 lg:ml-[400px] min-[667px]:mt-36 shadow-xl lg:mt-24  mt-10 h-12 lg:h-8 lg:w-28 items-center rounded-lg w-36 justify-center   lg:text-sm flex flex-row"
+              className=" animate-bounce absolute  lg:flex hidden z-10 bg-white ml-28 min-[667px]:ml-64 lg:ml-[400px] min-[667px]:mt-36 shadow-xl lg:mt-24  mt-10 h-12 lg:h-8 lg:w-28 items-center rounded-lg w-36 justify-center   lg:text-sm  lg:flex-row"
             >
               Hospital Bill <IoIosSend />
             </button>

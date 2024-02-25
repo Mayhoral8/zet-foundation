@@ -7,7 +7,7 @@ import aboutB from "../../../public/about/aboutb.webp";
 const About = () => {
   return (
     <main className="lg:pt-20 pt-12">
-      <h2 className="font-light text-lightGreen text-2xl text-center">
+      <h2 className="font-bold text-darkGreen text-2xl text-center">
         About Us
       </h2>
       <section className="lg:grid lg:grid-cols-2 lg:px-24 lg:w-full lg:pt-6  ">
