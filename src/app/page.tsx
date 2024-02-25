@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 
 import Image from "next/image";
 import { quicksand } from "./ui/fonts";
-
+import Link from "next/link";
 import hero1 from "../../public/landing-page-images/section-a/hero-a-mobile.webp";
 import heroWeb from "../../public/landing-page-images/section-a/hero-a-web.webp";
 
@@ -103,7 +103,7 @@ export default function Home() {
                     data-aos-easing="ease-out"
                     data-aos-duration="1200"
                     data-aos-once="true"
-                    className=" z-20 animate-bounce text-lightGreen text-regular bg-white items-center h-12 w-32  lg:space-x-4 text-center font-medium lg:h-14 rounded-xl lg:w-40 mt-[-32px] lg:mt-[-140px] lg:right-[430px]  ml-6  flex flex-row justify-center absolute shadow-lg"
+                    className=" z-20 animate-bounce text-regular bg-white items-center h-12 w-32  lg:space-x-4 text-center font-medium lg:h-14 rounded-xl lg:w-40 mt-[-32px] lg:mt-[-140px] lg:right-[430px]  ml-6  flex flex-row justify-center absolute shadow-lg"
                   >
                     Send fund <IoIosSend />{" "}
                   </button>
@@ -143,16 +143,18 @@ export default function Home() {
             <div className="font-medium quote2 mt-4 lg:mt-2 flex space-y-4 lg:space-y-4 flex-col  text-center lg:text-start lg:items-start items-center">
               <p>
                 A quote from T.B Joshua which explains the deep concerns{" "}
-                <br className="lg:block hidden" /> every privileged  <br className="md:block hidden" /> individual
-                needs to express to the less privileged <br className="md:block hidden" />
+                <br className="lg:block hidden" /> every privileged individual
+                needs to express to the less privileged
                 <br className="lg:block hidden" /> within our communities in
                 order to attain true happiness
               </p>
               <button className="bg-lightGreen rounded-3xl  text-medium w-32 h-10 text-gray-700">
+                <Link href='/about'>
                 <div className="flex flex-row items-center justify-center space-x-2">
                   <h3 className="text-xs ">Find out more</h3>
                   <MdArrowOutward />
                 </div>
+                </Link>
               </button>
             </div>
             <div className="font-medium quote2 mt-4 flex space-y-2 lg:space-y-4 flex-col justify-center text-center lg:items-start lg:text-start items-center">
@@ -164,10 +166,12 @@ export default function Home() {
               </p>
 
               <button className="bg-darkGreen rounded-3xl text-white text-medium w-32 h-10">
+              <Link href='/about'>
                 <div className="flex flex-row items-center  space-x-2 justify-center">
                   <h3 className="text-xs">Read more</h3>
                   <MdArrowOutward />
                 </div>
+                </Link>
               </button>
             </div>
             <article className="mt-8 space-y-2 items-center flex flex-col justify-center lg:justify-start lg:flex lg:flex-row  lg:space-x-2">

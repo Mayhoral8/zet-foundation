@@ -46,7 +46,9 @@ const About = () => {
         <article className="">
           <div className="flex font-light indent-8 px-2 flex-col space-y-3 mt-4 lg:mt-0 text-sm ">
             <p className="">
-              Welcome to Zion Eminent Trust Foundation, a place that gives hope
+             Welcome to   <span className="font-bold">
+             Zion Eminent Trust Foundation
+                </span> , a place that gives hope
               to the hopeless and seeks to find happiness in making others
               happy. Zion Eminent Foundation was established in 2019 and
               incorporated in 2023.
@@ -105,7 +107,7 @@ const About = () => {
             </li>
           </div>
 
-          <p className="indent-8 px-2 font-light lg:text-sm">
+          <p className="indent-8 px-2 font-light mt-4 text-sm">
             You can join our team of volunteers and Donors to further aid us
             make our world a better place to live, remember that happiness lies
             in making others happy.
