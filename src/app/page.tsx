@@ -19,6 +19,8 @@ import project1 from "../../public/landing-page-images/projects/project-1.webp";
 import project2 from "../../public/landing-page-images/projects/project-2.webp";
 import project3 from "../../public/landing-page-images/projects/project-3.webp";
 import project4 from "../../public/landing-page-images/projects/project-4.webp";
+import aboutA from "../../public/about/abouta.webp"
+
 
 import { MdArrowOutward } from "react-icons/md";
 import { IoIosSend } from "react-icons/io";
@@ -71,7 +73,7 @@ export default function Home() {
               />
 
               <article className="flex flex-row justify-around lg:justify-end lg:space-x-20 mt-[-130px] lg:mt-0 items-center w-full">
-                <div className="w-2/5  lg:w-2/6 rounded-lg mt-16 lg:mt-4  shadow-lg">
+                <div className="w-2/5 h-4/5  lg:w-2/6 rounded-lg mt-16 lg:mt-4  shadow-lg">
                   <div
                     data-aos="fade"
                     data-aos-easing="ease-out"
@@ -79,10 +81,10 @@ export default function Home() {
                     data-aos-once="true"
                   >
                     <Image
-                      src={hero2}
-                      width={519}
-                      height={495}
-                      className="lg:h-40"
+                      src={aboutA}
+                      width={522}
+                      height={500}
+                      className="lg:h-40 w-full h-full"
                       alt="Screenshots  of the dashboard project showing mobile version"
                     />
                   </div>
@@ -159,7 +161,7 @@ export default function Home() {
             </div>
             <div className="font-medium quote2 mt-4 flex space-y-2 lg:space-y-4 flex-col justify-center text-center lg:items-start lg:text-start items-center">
               <p>
-                Welcome to Zion Eminent Foundation, a place that{" "}
+                Welcome to Zion Eminent Trust Foundation, a place that{" "}
                 <br className="lg:block md:block hidden" /> gives hope to the hopeless
                 and seeks to find <br className="lg:block hidden" /> happiness
                 in making others happy ...
